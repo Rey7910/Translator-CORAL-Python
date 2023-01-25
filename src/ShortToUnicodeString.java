@@ -54,8 +54,7 @@ public class ShortToUnicodeString extends MiLenguajeBaseListener{
         System.out.print("\'\'\'\n" +
                 "lenguajes de programación \n" +
                 "Traductor de CORAL a Python\n" +
-                "- Reinaldo Toledo Leguizamón\n" +
-                "- Santiago Hernández Chaparro\n" +
+                "- Rey 7910\n" +
                 "2022-2\n\'\'\'\n");
         System.out.print("import math\nimport random\n\n");
     }
