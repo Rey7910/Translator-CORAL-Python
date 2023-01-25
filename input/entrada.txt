@@ -1,0 +1,86 @@
+Function min(integer y3, integer y4) returns integer z2
+   if y3 < y4
+      z2 = y3
+   else
+      z2 = y4
+
+Function FtInchToCm(float numFt, float numInch) returns float numCm
+   numCm = ((numFt * 12) + numInch) * 2.54
+
+Function builtIns(integer a, integer b) returns nothing
+   Put SquareRoot(a) to output with 2 decimal places
+   Put ", " to output
+   Put RaiseToPower(a, b) to output
+   Put ", " to output
+   Put AbsoluteValue(b) to output
+
+Function good_Quote() returns integer done
+   Put "\"Aprender lenguajes es muy divertido.\"\n \n" to output
+   done = RandomNumber(0,1)
+
+Function new_array(integer s) returns integer array(?) userNums
+   userNums.size = s
+
+Function LP() returns nothing
+   integer Codigo_SIA
+   integer Creditos
+   Codigo_SIA = 2025966
+   Creditos = 3
+
+   Put "^ " to output
+   Put "Codigo_SIA" to output
+   Put ":\t" to output
+   Put Codigo_SIA to output
+   Put ".\n" to output
+
+   Put "^ Créditos: \t" to output
+   Put Creditos to output
+   Put ".\n" to output
+
+   Put "/////////////// \n" to output
+
+   Put "^ " to output
+   Put "Docente: Felipe Restrepo Calle" to output
+   Put ".\n" to output
+   Put "^ WebPage: \"disi.unal.edu.co/~ferestrepoca/\" \n" to output
+   Put "^ Email: \"ferestrepoca@unal.edu.co\"" to output
+
+Function Main() returns nothing
+   integer var1
+   float my_min
+   integer var2
+   float array(?) my_array
+   integer check
+
+   var1 = 14
+   var2 = 2
+   check = good_Quote()
+   my_min = min(var1, var2)
+
+   if (check >= RaiseToPower(my_min,0) and (check <= (5*4) - 19)) or not (check == 0)
+      Put "check == 1" to output
+
+   elseif (check == (3-4-(-1))) and not (check < (2*min(+my_min,var1+var2))%2 or check > 0/-2)
+      Put "check == 0" to output
+
+   Put "\n" to output
+   Put "min" to output
+   Put " = " to output
+   Put my_min to output
+   Put "\n" to output
+   Put "FtInchToCm" to output
+   Put " = " to output
+   Put FtInchToCm(30.5, 11.3) to output with 1 decimal places
+   Put "\n" to output
+   Put "builtIns" to output
+   Put " = " to output
+   builtIns(var1 + var2, my_min)
+   Put "\n" to output
+   my_array = new_array((my_min*var1-var2) % 17)
+   Put "size" to output
+   Put " = " to output
+   Put my_array.size to output
+   Put "\n" to output
+   Put "Lenguajes de Programacion // Semestre 2022-II" to output
+   Put " =\n" to output
+   LP()
